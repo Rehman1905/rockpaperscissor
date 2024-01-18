@@ -105,12 +105,16 @@ function play(a) {
   } else {
     message.innerHTML = 'Draw'
   }
-  if (userWinNumber == 5 || botWinNumber==5) {
-    if(userWinNumber>botWinNumber){
-        alert("Siz winnersiz")
-    }else{
-        alert("Get bəxtini təmizlə")
+  if (userWinNumber >= 5 || botWinNumber >= 5) {
+    if (userWinNumber > botWinNumber) {
+        message.innerHTML = "Siz winnersiz";
+    } else {
+        message.innerHTML = "Get bəxtini təmizlə";
     }
-    resetGame();
-  }
+    setTimeout(function () {
+        alert(message.innerHTML);
+        resetGame();
+    },);
+}
+
 }
