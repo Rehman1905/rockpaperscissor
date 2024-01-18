@@ -24,8 +24,8 @@ function resetGame() {
   userWin.innerHTML = userWinNumber
   botWin.innerHTML = botWinNumber
   message.innerHTML = ''
-  user.innerHTML = ''
-  bot.innerHTML = ''
+  user.innerHTML = '-'
+  bot.innerHTML = '-'
 }
 
 rockBtn.addEventListener('click', function (e) {
