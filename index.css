@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(158, 232, 232);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: #473b3b;
+    font-size: 50px;
+    margin-top: 70px;
+}
+.section1{
+    background-color: rgb(255, 123, 0);
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+}
+
+.section2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.result{
+    display: flex;
+}
+.user,.bot{
+    width: 130px;
+    background-color: blue;
+    font-size: 100px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.bot{
+    background-color: rgb(235, 27, 242);
+}
+.result{
+    font-size: 50px;
+    display: flex;
+    gap: 10px;
+}
+.line{
+    font-size: 43px;
+}
+.section4,.section3{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.section4 button{
+    font-size: 25px;
+    width: 130px;
+    height: 50px;
+    margin-left: 20px;
+}
+.button1{
+    background-color: rgb(80, 80, 246);
+}
+.button2{
+    background-color: rgb(16, 184, 16);
+}
+.button3{
+    background-color: rgb(205, 28, 163);
+}
+
+.message{
+    font-size: 30px;
+    background-color: yellowgreen;
+    border-radius: 30px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
