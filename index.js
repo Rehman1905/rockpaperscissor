@@ -44,60 +44,56 @@ function play(a) {
   tur++
   const userChoise = a
   const botChoise = runbotChoise()
-  bot.innerHTML=botChoise
-  if(userChoise=='r'){
+  bot.innerHTML = botChoise
+  if (userChoise == 'r') {
     var imagePath = 'image/balacadas.png'
-  var imageElement = document.createElement('img')
-  imageElement.src = imagePath
-  user.innerHTML = ''
-  user.appendChild(imageElement)
-  }else if(userChoise=='p'){
+    var imageElement = document.createElement('img')
+    imageElement.src = imagePath
+    user.innerHTML = ''
+    user.appendChild(imageElement)
+  } else if (userChoise == 'p') {
     var imagePath = 'image/balacakagiz.png'
-  var imageElement = document.createElement('img')
-  imageElement.src = imagePath
-  user.innerHTML = ''
-  user.appendChild(imageElement)
-  }else if(userChoise=='s'){
+    var imageElement = document.createElement('img')
+    imageElement.src = imagePath
+    user.innerHTML = ''
+    user.appendChild(imageElement)
+  } else if (userChoise == 's') {
     var imagePath = 'image/balacaqayci.png'
-  var imageElement = document.createElement('img')
-  imageElement.src = imagePath
-  user.innerHTML = ''
-  user.appendChild(imageElement)
+    var imageElement = document.createElement('img')
+    imageElement.src = imagePath
+    user.innerHTML = ''
+    user.appendChild(imageElement)
   }
-  if(botChoise=='r'){
+  if (botChoise == 'r') {
     var imagePath = 'image/balacadas.png'
-  var imageElement = document.createElement('img')
-  imageElement.src = imagePath
-  bot.innerHTML = ''
-  bot.appendChild(imageElement)
-  }else if(botChoise=='p'){
+    var imageElement = document.createElement('img')
+    imageElement.src = imagePath
+    bot.innerHTML = ''
+    bot.appendChild(imageElement)
+  } else if (botChoise == 'p') {
     var imagePath = 'image/balacakagiz.png'
-  var imageElement = document.createElement('img')
-  imageElement.src = imagePath
-  bot.innerHTML = ''
-  bot.appendChild(imageElement)
-  }else if(botChoise=='s'){
+    var imageElement = document.createElement('img')
+    imageElement.src = imagePath
+    bot.innerHTML = ''
+    bot.appendChild(imageElement)
+  } else if (botChoise == 's') {
     var imagePath = 'image/balacaqayci.png'
-  var imageElement = document.createElement('img')
-  imageElement.src = imagePath
-  bot.innerHTML = ''
-  bot.appendChild(imageElement)
+    var imageElement = document.createElement('img')
+    imageElement.src = imagePath
+    bot.innerHTML = ''
+    bot.appendChild(imageElement)
   }
 
   round.innerHTML = tur
 
   if (
-    (userChoise == 'r' && botChoise == 's') ||
-    (userChoise == 'p' && botChoise == 'r') ||
-    (userChoise == 's' && botChoise == 'p')
+    (userChoise == 'r' && botChoise == 's') || (userChoise == 'p' && botChoise == 'r') || (userChoise == 's' && botChoise == 'p')
   ) {
     userWinNumber++
     userWin.innerHTML = userWinNumber
     message.innerHTML = 'User has won'
   } else if (
-    (userChoise == 's' && botChoise == 'r') ||
-    (userChoise == 'r' && botChoise == 'p') ||
-    (userChoise == 'p' && botChoise == 's')
+    (userChoise == 's' && botChoise == 'r') || (userChoise == 'r' && botChoise == 'p') || (userChoise == 'p' && botChoise == 's')
   ) {
     botWinNumber++
     botWin.innerHTML = botWinNumber
@@ -107,13 +103,13 @@ function play(a) {
   }
   if (userWinNumber >= 5 || botWinNumber >= 5) {
     if (userWinNumber > botWinNumber) {
-        message.innerHTML = "Siz winnersiz";
+      message.innerHTML = "Siz winnersiz";
     } else {
-        message.innerHTML = "Get bəxtini təmizlə";
+      message.innerHTML = "Get bəxtini təmizlə";
     }
     setTimeout(function () {
-        alert(message.innerHTML);
-        resetGame();
+      alert(message.innerHTML);
+      resetGame();
     },);
 }
 
